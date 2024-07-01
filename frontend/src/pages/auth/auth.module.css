@@ -1,0 +1,176 @@
+.userAuth__container {
+    background-color: rgb(252, 251, 251);
+    width: 100%;
+    height: calc(100dvh - 90px);
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 0em;
+}
+
+.authContainer__LeftSideContainer {
+    height: 100%;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 2em;
+    justify-content: flex-end;
+}
+
+.LeftSideContainer__PosterBox {
+    width: 500px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.PosterBox__dynamicImages {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.authContainer__RightSideContainer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Auth__UserLoginFormContainer {
+    width: 100%;
+}
+
+.authFormn_Box {
+    border-radius: 3px;
+    border: 2px solid rgb(219, 219, 219);
+    width: 450px;
+}
+
+.LoginForm__Link__Logo {
+    text-decoration: none;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0.1em 0em;
+}
+
+.Auth__LoginForm {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.Auth__formItemBox {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.ItemBox__errorState {
+    border: 2px solid #e5532d !important;
+}
+
+.Auth__formItem {
+    outline: none;
+    width: 100%;
+    height: 50px;
+    padding: 0em 0.6em;
+    border-radius: 5px;
+    border: 1px solid rgb(219, 219, 219);
+    font-size: 16px;
+}
+
+.Auth__formSelect__Item {
+    text-transform: capitalize;
+}
+
+.Auth__formItem:focus {
+    outline: 1px solid rgb(219, 219, 219);
+}
+
+.Auth__formButton {
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(0, 149, 246);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: all 0.1s ease-in-out;
+    margin: 20px 0px 10px 0px;
+    position: relative;
+}
+
+.Auth__formButton:hover {
+    cursor: pointer;
+    background-color: #0866ff;
+}
+
+.unActiveFormButton {
+    pointer-events: none;
+    background-color: rgba(0, 148, 246, 0.74);
+}
+
+.formPassword__showHide {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: rgb(39, 39, 39);
+}
+
+.formPassword__showHide:hover {
+    cursor: pointer;
+    color: rgb(95, 94, 94);
+}
+
+.authGotoSignUP_container {
+    border: 2px solid rgb(219, 219, 219);
+    margin-top: 10px;
+    width: 450px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gotoRegisterPageLINK {
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: 600;
+    color: rgb(0, 149, 246);
+    text-align: center;
+}
+
+
+@media screen and (max-width: 990px) {
+    .authContainer__LeftSideContainer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Auth__UserLoginFormContainer {
+        width: 100vw;
+    }
+
+    .authFormn_Box,
+    .authGotoSignUP_container {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
